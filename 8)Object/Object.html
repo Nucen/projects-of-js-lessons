@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    
+    // let user = {
+    //     name: "John",
+    //     surename: "Smith",
+    // }
+
+    // for (let key in user) alert(user[key]) 
+
+    // user.name = "Pete"
+
+    // for (let key in user) alert( user[key] ) 
+
+    // delete user.name
+
+    // for (let key in user) alert(user[key]) 
+
+    // let isEmpty = (obj) => {
+    //     for (let key in obj){
+    //         return true
+    //     }
+    //     return false
+    // }
+
+    // let schedule = {};
+
+    // alert( isEmpty(schedule))
+
+    let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+        };
+
+        let sum = 0;
+        for (let key in salaries) {
+            sum += salaries[key];
+        }
+
+        alert(sum);
+
+    </script> 
+</body>
+</html>
