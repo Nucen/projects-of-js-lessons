@@ -34,18 +34,48 @@
 
     // alert( isEmpty(schedule))
 
-    let salaries = {
-            John: 100,
-            Ann: 160,
-            Pete: 130
-        };
+    // let salaries = {
+    //         John: 100,
+    //         Ann: 160,
+    //         Pete: 130
+    //     };
+    
+    // const summing = (salaries) => {
+    //     let sum = 0
 
-        let sum = 0;
-        for (let key in salaries) {
-            sum += salaries[key];
+    //     for (let key in salaries) {
+    //         sum += salaries[key]
+    //     }
+
+    //     alert(sum)
+    // } 
+
+    // const result = summing(salaries)
+    // let sum = 0;
+        // for (let key in salaries) {
+        //     sum += salaries[key];
+        // }
+
+        // alert(sum);
+
+    let menu = {
+        width: 200,
+        height: 300,
+        title: "my menu",
+    }
+
+    const multiplyNumeric = (menu) => {
+    for (let key in menu) {
+        if (typeof menu[key] === 'number') { 
+            menu[key] *= 2;
         }
+    }
+    };
 
-        alert(sum);
+    multiplyNumeric(menu)
+    
+    alert(JSON.stringify(menu));
+
 
     </script> 
 </body>
